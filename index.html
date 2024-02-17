@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -14,11 +14,26 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
-    <header>
+<body class="font-railway">
+    <header class="container mx-auto my-10">
         <!-- nav section -->
         <nav>
-
+            <div class="navbar">
+                <div class="navbar-start">
+                    <h1 class="text-4xl font-extrabold">Move-It</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[#030712] font-medium text-xl opacity-70">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn primary-color px-7 text-xl font-bold border-2 border-[#1cd10021] rounded-xl bg-[#1cd10021]">Bus <img src="images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
         </nav>
 
         <!-- hero section -->
