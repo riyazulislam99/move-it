@@ -15,12 +15,12 @@
 </head>
 
 <body class="font-railway">
-    <header class="container mx-auto my-10">
+    <header class="container mx-auto my-10 lg:mb-24">
         <!-- nav section -->
         <nav>
             <div class="navbar">
                 <div class="navbar-start">
-                    <h1 class="text-4xl font-extrabold">Move-It</h1>
+                    <h1 class="text-3xl lg:text-4xl font-extrabold">Move-It</h1>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-[#030712] font-medium text-xl opacity-70">
@@ -31,23 +31,76 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn primary-color px-7 text-xl font-bold border-2 border-[#1cd10021] rounded-xl bg-[#1cd10021]">Bus <img src="images/bus-icon.png" alt=""></a>
+                    <a
+                        class="btn primary-color lg:px-7 text-xl font-bold border-2 border-[#1cd10021] rounded-xl bg-[#1cd10021]">Bus
+                        <img src="images/bus-icon.png" alt=""></a>
                 </div>
             </div>
         </nav>
 
         <!-- hero section -->
+        <div class="hero min-h-[550px] rounded-3xl" style="background-image: url(images/banner.png);">
+            <div class="hero-overlay bg-opacity-30 rounded-3xl"></div>
+            <div class="hero-content text-center text-neutral-content mb-16">
+                <div class="">
+                    <h1 class="text-4xl lg:mb-4 lg:text-6xl  font-extrabold">End-to-End Travel with <br> <span
+                            class="text-[#1DD100]">MoveIt Paribahan</span></h1>
+                    <p class="mb-8 lg:text-xl">Looking for great deals on bus tickets? We'll make it for you! Get the
+                        lowest prices, and <br> renowned bus operators - all in one place.</p>
+                    <button class="btn border-none lg:text-xl font-bold px-6 bg-[#1DD100]">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
 
     </header>
 
     <!-- main section -->
     <main>
         <!-- best offer section -->
+        <section class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Best offers for you</h2>
+            <div class="lg:flex lg:justify-between">
+                <div class="flex bg-[#FFBF0F] rounded-3xl">
+                    <div class="flex flex-col justify-center p-12">
+                        <h3 class="text-2xl lg:text-4xl font-black font-inter">15% OFF</h3>
+                        <p class="lg:text-xl font-semibold">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <img src="images/cupon-devider.png" alt="">
+                    <div class="flex flex-col justify-center lg:p-12">
+                        <h3 class="text-2xl lg:text-4xl font-bold">NEW15</h3>
+                        <p class="lg:text-xl font-medium">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex bg-[#F78C9C] rounded-3xl">
+                    <div class="flex flex-col justify-center p-12">
+                        <h3 class="text-2xl lg:text-4xl font-black font-inter">20% OFF</h3>
+                        <p class="lg:text-xl font-semibold">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <img src="images/cupon-devider.png" alt="">
+                    <div class="flex flex-col justify-center lg:p-12">
+                        <h3 class="text-3xl font-bold">Couple 20</h3>
+                        <p class="text-xl font-medium">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-11">
+                <button class="btn btn-outline text-[#1DD100] font-bold px-6">See All Offers</button>
+            </div>
+        </section>
 
+        <!-- select your seat section -->
+        <section>
+            <div class="text-center">
+                <h1 class="text-3xl lg:text-4xl font-bold mb-6">MoveIt Paribahan</h1>
+                <p class="mb-8 lg:text-xl">Looking for great deals on bus tickets? We'll make it for you! Get the
+                    lowest prices, and <br> renowned bus operators - all in one place.</p>
+            </div>
+            <div>
 
-
-
-        <!-- select your section -->
+            </div>
+        </section>
 
     </main>
 
