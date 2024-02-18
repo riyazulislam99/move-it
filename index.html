@@ -31,9 +31,11 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a
-                        class="btn primary-color lg:px-7 text-xl font-bold border-2 border-[#1cd10021] rounded-xl bg-[#1cd10021]">Bus
-                        <img src="images/bus-icon.png" alt=""></a>
+                    <button>
+                        <a
+                            class="btn primary-color lg:px-7 text-xl font-bold border-2 border-[#1cd10021] rounded-xl bg-[#1cd10021]">Bus<img
+                                src="images/bus-icon.png" alt=""></a>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -60,7 +62,7 @@
         <section class="container mx-auto">
             <h2 class="text-4xl font-bold text-center mb-12">Best offers for you</h2>
             <div class="lg:flex lg:justify-between">
-                <div class="flex bg-[#FFBF0F] rounded-3xl">
+                <div class="flex bg-[#FFBF0F] rounded-3xl mb-7 lg:mb-0">
                     <div class="flex flex-col justify-center p-12">
                         <h3 class="text-2xl lg:text-4xl font-black font-inter">15% OFF</h3>
                         <p class="lg:text-xl font-semibold">on your next purchase</p>
@@ -90,15 +92,285 @@
             </div>
         </section>
 
-        <!-- select your seat section -->
-        <section>
-            <div class="text-center">
-                <h1 class="text-3xl lg:text-4xl font-bold mb-6">MoveIt Paribahan</h1>
-                <p class="mb-8 lg:text-xl">Looking for great deals on bus tickets? We'll make it for you! Get the
-                    lowest prices, and <br> renowned bus operators - all in one place.</p>
-            </div>
-            <div>
 
+        <!-- ticket price -->
+        <section class="bg-[#F7F8F8] mt-12 lg:mt-24 rounded-t-[88px] border-t-2 border-green-500">
+            <!-- paribahan -->
+            <div class="container mx-auto">
+                <div class="text-center p-8">
+                    <h1 class="text-3xl lg:text-4xl font-bold mb-6">Move-It Paribahan</h1>
+                    <p class="mb-8 font-inter">Looking for great deals on bus tickets? We'll make it for you! Get the
+                        lowest prices, and <br> renowned bus operators - all in one place.</p>
+                </div>
+                <div class="bg-[#FFFFFF] lg:p-8 rounded-3xl">
+                    <div class="lg:flex items-center justify-between mb-6 lg:w-3/5">
+                        <div class="flex">
+                            <div class="mr-4">
+                                <img src="images/bus-logo.png" alt="">
+                            </div>
+                            <div>
+                                <h2 class="text-2xl lg:text-3xl font-bold">Greenline Paribahan</h2>
+                                <p class="lg:text-lg opacity-70 font-inter">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div>
+                            <button><a
+                                    class="btn primary-color font-inter lg:text-xl font-bold border-2 border-[#1cd10021] rounded-xl bg-[#1cd10021]">
+                                    <img src="images/seat-green.png" alt="">40 Seats left</a></button>
+                        </div>
+                    </div>
+                    <div class="lg:flex items-center justify-between">
+                        <div class="bg-[#F7F8F8] rounded-3xl p-8">
+                            <div class="">
+                                <div class="mb-4 lg:flex justify-between">
+                                    <p>Route</p>
+                                    <p class="font-bold">Dhaka - Sylhet</p>
+                                </div>
+                                <div class="lg:flex justify-between mb-4 border-y-2 border-dashed py-4">
+                                    <p>Departure Time</p>
+                                    <p class="font-bold">9:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="lg:flex lg:gap-6">
+                                <p class="bg-[#0307120D] rounded-lg p-2 lg:px-4 font-medium font-inter">Boarding Point -
+                                    Laxmipur</p>
+                                <p class="bg-[#0307120D] rounded-lg p-2 px-4 font-medium font-inter mt-3 lg:mt-0">
+                                    Dropping Point -
+                                    Bogura</p>
+                                <p class="bg-[#0307120D] rounded-lg p-2 px-4 font-medium font-inter mt-3 lg:mt-0">Est.
+                                    Time - 11 Hour
+                                </p>
+                            </div>
+                        </div>
+                        <div class="text-center flex flex-col items-center lg:mr-16">
+                            <img src="images/fare.png" alt="">
+                            <h3 class="text-4xl font-bold">550 Taka</h3>
+                            <p class="text-2xl font-semibold">Per Seat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- select your seat section -->
+            <div class="container mx-auto lg:flex justify-between bg-[#FFFFFF] p-8 mt-7 rounded-3xl">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Select Your Seat</h3>
+                    <div class="flex border-y-2 border-dashed py-1 mb-6">
+                        <div>
+                            <p class="btn btn-ghost"><img src="images/seat-gray.png" alt=""> Available</p>
+                        </div>
+                        <div>
+                            <p class="btn btn-ghost text-xl font-medium text-[#1DD100]"><img
+                                    src="images/seat-green-filled.png" alt="">Selected</p>
+                        </div>
+                    </div>
+                    <div class="mb-8 w-24 lg:translate-x-[490px]">
+                        <div>
+                            <img class="btn bg-[#0307121A] lg:px-9 py-4" src="images/Vector.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- seat selection -->
+                    <div class="grid grid-cols-5 gap-3 lg:gap-7">
+                        <div>
+                            <p>A</p>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">A1</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">A2</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">A3</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">A4</button>
+                        </div>
+                        <div>
+                            <p>B</p>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">B1</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">B2</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">B3</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">B4</button>
+                        </div>
+                        <div>
+                            <p>C</p>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">C1</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">C2</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">C3</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">C4</button>
+                        </div>
+                        <div>
+                            <p>D</p>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">D1</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">D2</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">D3</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">D4</button>
+                        </div>
+                        <div>
+                            <p>E</p>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">E1</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">E2</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">D3</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">E4</button>
+                        </div>
+                        <div>
+                            <p>F</p>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">F1</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">F2</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">F3</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">F4</button>
+                        </div>
+                        <div>
+                            <p>G</p>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">G1</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">G2</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">G3</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">G4</button>
+                        </div>
+                        <div>
+                            <p>H</p>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">H1</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">H2</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">H3</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">H4</button>
+                        </div>
+                        <div>
+                            <p>I</p>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">I1</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">I2</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">I3</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">I4</button>
+                        </div>
+                        <div>
+                            <p>J</p>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">J1</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">J2</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">J3</button>
+                        </div>
+                        <div>
+                            <button class="font-inter btn bg-[#ededed] lg:px-9 py-4">J4</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="font-inter">
+                    <h3 class="text-2xl font-semibold mb-6 border-b-2 border-dashed pb-6">Your Seat</h3>
+                    <div class="">
+                        <div class="bg-[#F7F8F8] rounded-xl p-8">
+                            <div class="flex justify-between font-bold mb-4">
+                                <p>Seat<span id="" class="bg-green-500 px-3 rounded-full text-white">0</span></p>
+                                <p>Class</p>
+                                <p>Price</p>
+                            </div>
+                            <div id="selected-seat" class=" border-y-2 py-4">
+                                <p>hfsdlfkj</p>
+                                <p>hfsdlfkj</p>
+                                <p>hfsdlfkj</p>
+                            </div>
+                            <div class="lg:flex justify-between font-bold mt-4">
+                                <p>Total Price:</p>
+                                <p>BDT: <span>0</span></p>
+                            </div>
+                            <div class="lg:join my-6">
+                                <input class="input join-item" placeholder="Have any coupon" />
+                                <button class="btn join-item text-white bg-green-500">Apply</button>
+                            </div>
+                            <div class="lg:flex font-bold">
+                                <p>Grand Total:</p>
+                                <p>BDT: <span>0</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Input field -->
+                        <div class="mt-4">
+                            <h3 class="font-bold mb-4">Passenger Name*</h3>
+                            <label class="input input-bordered flex items-center gap-2 mb-4">
+                                <input type="text" class="grow" placeholder="Enter your name" />
+                            </label>
+                            <h3 class="font-bold">Phone Number*</h3>
+                            <label class="input input-bordered flex items-center gap-2 mb-4">
+                                <input type="text" class="grow" placeholder="Enter your phone number" />
+                            </label>
+                            <h3 class="font-bold mb-4">Email ID*</h3>
+                            <label class="input input-bordered flex items-center gap-2 mb-6">
+                                <input type="text" class="grow" placeholder="Enter your email id" />
+                            </label>
+                            <button class="btn btn-wide bg-green-500 text-white w-full">Next</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
