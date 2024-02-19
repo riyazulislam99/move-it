@@ -35,10 +35,13 @@ applyButton.addEventListener('click', function () {
     const getCouponCouple = document.getElementById('get-coupon');
     const getCouponCoupleValue = getCouponCouple.value;
 
+    const hideThis = document.getElementById('hide-this');
+
     if (getCouponValue === 'NEW15') {
         if (selectedSeatCount === 4) {
             const discountedPrice = ticketPrice * 0.15;
             document.getElementById('grand-total').innerText = ticketPrice - discountedPrice;
+            hideThis.classList.add('hidden');
         }
         else {
             alert('Please buy at least 4 ticket for discount.');
@@ -60,31 +63,3 @@ applyButton.addEventListener('click', function () {
     getCouponCouple.value = '';
 
 });
-
-
-
-
-
-
-
-
-
-
-// const applyButton = document.getElementById('apply-button');
-// applyButton.addEventListener('click', function () {
-//     const getCoupon = document.getElementById('get-coupon').value.split(' ').join('').toUpperCase();
-
-//     if (getCoupon === 'NEW15') {
-//         if (selectedSeatCount === 4) {
-//             const discountedPrice = ticketPrice * 0.15;
-//             document.getElementById('grand-total').innerText = ticketPrice - discountedPrice;
-//         }
-//         else {
-//             alert('Please buy at least 4 ticket for discount.');
-//         }
-//     }
-//     else {
-//         alert('Invalid coupon!');
-//     }
-
-// });
