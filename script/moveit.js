@@ -3,10 +3,11 @@ const seatSelection = document.querySelectorAll('#seat-selection button');
 let seatLeftCount = 40;
 let selectedSeatCount = 0;
 let ticketPrice = 0;
+const maxSeatSelection = 4;
 
 for (const seat of seatSelection) {
     seat.addEventListener('click', function () {
-        if (!seat.classList.contains('bg-green-400')) {       //one seat can't multiple selection
+        if (!seat.classList.contains('bg-green-400') && selectedSeatCount < maxSeatSelection) {     //one seat can't multiple selection
             seat.classList.add('bg-green-400');
             seatLeftCount--
             document.getElementById('seat-left').innerText = seatLeftCount;
@@ -51,6 +52,7 @@ applyButton.addEventListener('click', function () {
         if (selectedSeatCount === 4) {
             const discountedPriceForCouple = ticketPrice * 0.2;
             document.getElementById('grand-total').innerText = ticketPrice - discountedPriceForCouple;
+            hideThis.classList.add('hidden');
         }
         else {
             alert('Please buy at least 4 ticket for discount.');
@@ -61,5 +63,4 @@ applyButton.addEventListener('click', function () {
     }
     getCoupon.value = '';
     getCouponCouple.value = '';
-
 });
