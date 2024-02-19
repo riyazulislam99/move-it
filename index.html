@@ -49,7 +49,7 @@
                             class="text-[#1DD100]">MoveIt Paribahan</span></h1>
                     <p class="mb-8 lg:text-xl">Looking for great deals on bus tickets? We'll make it for you! Get the
                         lowest prices, and <br> renowned bus operators - all in one place.</p>
-                    <button class="btn border-none lg:text-xl font-bold px-6 bg-[#1DD100]">Buy Tickets</button>
+                    <a href="#ticket-price"><button class="btn border-none lg:text-xl font-bold px-6 bg-[#1DD100]">Buy Tickets</button></a>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
 
 
         <!-- ticket price -->
-        <section class="bg-[#F7F8F8] mt-12 lg:mt-24 rounded-t-[88px] border-t-2 border-green-500">
+        <section id="ticket-price" class="bg-[#F7F8F8] mt-12 lg:mt-24 rounded-t-[88px] border-t-2 border-green-500">
             <!-- paribahan -->
             <div class="container mx-auto">
                 <div class="text-center p-8">
@@ -116,7 +116,7 @@
                         <div>
                             <button><a
                                     class="btn primary-color font-inter lg:text-xl font-bold border-2 border-[#1cd10021] rounded-xl bg-[#1cd10021]">
-                                    <img src="images/seat-green.png" alt="">40 Seats left</a></button>
+                                    <img src="images/seat-green.png" alt=""><span id="seat-left">40</span>Seats left</a></button>
                         </div>
                     </div>
                     <div class="lg:flex items-center justify-between">
@@ -156,7 +156,7 @@
             <div class="container mx-auto lg:flex justify-between bg-[#FFFFFF] p-8 mt-7 rounded-3xl">
                 <div>
                     <h3 class="text-2xl font-semibold mb-6">Select Your Seat</h3>
-                    <div class="flex border-y-2 border-dashed py-1 mb-6">
+                    <div class="flex justify-between border-y-2 border-dashed py-1 mb-6">
                         <div>
                             <p class="btn btn-ghost"><img src="images/seat-gray.png" alt=""> Available</p>
                         </div>
@@ -172,7 +172,7 @@
                     </div>
 
                     <!-- seat selection -->
-                    <div class="grid grid-cols-5 gap-3 lg:gap-7">
+                    <div id="seat-selection" class="grid grid-cols-5 gap-3 lg:gap-7">
                         <div>
                             <p>A</p>
                         </div>
@@ -330,24 +330,24 @@
                     <div class="">
                         <div class="bg-[#F7F8F8] rounded-xl p-8">
                             <div class="flex justify-between font-bold mb-4">
-                                <p>Seat<span id="" class="bg-green-500 px-3 rounded-full text-white">0</span></p>
+                                <p>Seat<span id="selected-seat-count" class="bg-green-500 px-3 rounded-full text-white">0</span></p>
                                 <p>Class</p>
                                 <p>Price</p>
                             </div>
-                            <div id="selected-seat" class=" border-y-2 py-4">
-                                
+                            <div id="selected-seat-number" class=" border-y-2 py-4 flex flex-col gap-2">
+
                             </div>
                             <div class="lg:flex justify-between font-bold mt-4">
-                                <p>Total Price:</p>
-                                <p>BDT: <span>0</span></p>
+                                <p>Total Price</p>
+                                <p>BDT: <span id="total-price">0</span></p>
                             </div>
-                            <div class="lg:join my-6">
-                                <input class="input join-item" placeholder="Have any coupon" />
-                                <button class="btn join-item text-white bg-green-500">Apply</button>
+                            <div class="my-6 lg:join">
+                                <input id="get-coupon" class="input join-item" placeholder="Have any coupon" />
+                                <button id="apply-button" class="btn join-item text-white bg-green-500">Apply</button>
                             </div>
-                            <div class="lg:flex font-bold">
-                                <p>Grand Total:</p>
-                                <p>BDT: <span>0</span></p>
+                            <div class="lg:flex justify-between font-bold">
+                                <p>Grand Total</p>
+                                <p>BDT: <span id="grand-total">0</span></p>
                             </div>
                         </div>
 
@@ -375,24 +375,25 @@
 
     <!-- footer section -->
     <footer class="p-8 lg:p-32 bg-[#030712]">
-            <div class="lg:flex justify-between">
-                <aside>
-                    <h1 class="text-4xl font-extrabold text-white">Move-It</h1>
-                    <p class="text-[#FFFFFFCC]">Move-It Paribahan is a digital platform to make your <br> daily commuting
-                        better.</p>
-                </aside>
-                <div>
-                    <h6 class="mt-4 text-xl font-medium text-white">Download our app</h6>
-                    <a class="border rounded-lg p-2 mt-3 flex">
-                        <img src="images/playstore.png" alt="">
-                        <div>
-                            <h3 class="text-white">GET IT ON</h3>
-                            <h3 class="font-bold text-xl text-white">Google Play</h3>
-                        </div>
-                    </a>
-                </div>
+        <div class="lg:flex justify-between">
+            <aside>
+                <h1 class="text-4xl font-extrabold text-white">Move-It</h1>
+                <p class="text-[#FFFFFFCC]">Move-It Paribahan is a digital platform to make your <br> daily commuting
+                    better.</p>
+            </aside>
+            <div>
+                <h6 class="mt-4 text-xl font-medium text-white">Download our app</h6>
+                <a class="border rounded-lg p-2 mt-3 flex">
+                    <img src="images/playstore.png" alt="">
+                    <div>
+                        <h3 class="text-white">GET IT ON</h3>
+                        <h3 class="font-bold text-xl text-white">Google Play</h3>
+                    </div>
+                </a>
             </div>
-            <h1 class="text-white border-t-2 border-dashed opacity-40 mt-16">@all rights reserved, moveit services limited.2024</h1>
+        </div>
+        <h1 class="text-white border-t-2 border-dashed opacity-40 mt-16">@all rights reserved, moveit services
+            limited.2024</h1>
     </footer>
 
     <!-- script file -->
